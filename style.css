@@ -1,0 +1,98 @@
+:root{
+
+    --Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    background: hsl(204, 43%, 93%);
+}
+.container{
+    width: 43%;
+    display:grid ;
+    grid-template-rows: 50%,50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+}
+.first{
+    padding:0em 3em 1em 2em;
+    background: whitesmoke;
+}
+.second{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+background:  hsl(179, 62%, 43%);
+}
+.second-content{
+    padding:0em 2em 1em 2em;
+}
+.main-header{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: -5px;
+    color:hsl(179, 62%, 43%) ;
+}
+.first-paragraph{
+    font-size: 18px;
+    color:hsl(71, 73%, 54%) ;
+}
+.second-paragraph{
+    color:hsl(179, 62%, 43%);
+    font-size: 15px;
+    line-height: 23px;
+}
+.second-heading-1{
+    font-size: 17px;
+    color:white;
+    font-weight: 600;
+}
+.pricing{
+    color:white; 
+}
+.price{
+    font-size: 27px; 
+    font-weight: bold;
+    margin-right: 5px;
+}
+.access{
+    color:white;
+    font-size: 15px;
+}
+.sign-up{
+border: none;
+background:hsl(71, 73%, 54%) ;
+color:white;
+border-radius: 10px;
+padding: 15px;
+width: 15em;
+}
+#content-2{
+    color:white;  
+    background:  hsl(179, 53%, 49%);
+}
+.tutorials{
+    font-size: 15px;
+    line-height: 20px;
+    padding-right: 2em;
+
+}
+@media(max-width:375px){
+    .container{
+        width: 80%;
+        display:block ;
+    }
+    .second{
+        display:block ;
+        padding-top: 1em;
+     }
+     #content-2{
+        padding-top: 1em;
+    }
+}
